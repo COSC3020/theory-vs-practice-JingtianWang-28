@@ -13,3 +13,22 @@
   complexity suggests a different time.
 
 Add your answers to this markdown file.
+
+/////
+1
+(a) There may be large performance differences on different devices
+(b) It will also have an impact in different operating environments, such as system usage and memory usage.
+(c) Asymptotic analysis usually selects the worst and best cases and does not reflect the actual average situation.
+
+2
+by the def of binary search tree time complexity:O(logn),and the time cost will grow logarithmically with number of element n
+
+so we use the growth to estimate 
+$log_2 (1000)$ = $10, log_2(10000) = 13.3$
+13.3/10 = 1.33
+5*1.33 = 6.65 s
+
+3
+(a) An unbalanced binary search tree may result in actual time close to O(log n)
+(b) Memory allocation problem
+(c) Branch prediction penalty
