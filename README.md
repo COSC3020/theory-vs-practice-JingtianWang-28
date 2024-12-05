@@ -16,9 +16,9 @@ Add your answers to this markdown file.
 
 /////
 1
-(a) There may be large performance differences on different devices
-(b) It will also have an impact in different operating environments, such as system usage and memory usage.
-(c) Asymptotic analysis usually selects the worst and best cases and does not reflect the actual average situation.
+(a) The amount of input data may be different, for example, n=1000 and n=1
+(b) The same asymptotic complexity may hide underlying performance differences, for example, the actual running time of O(n^2) may be different
+(c) The specific implementation method and operational differences are not considered
 
 2
 by the def of binary search tree time complexity:O(logn),and the time cost will grow logarithmically with number of element n
@@ -29,6 +29,6 @@ $log_2 (1000)$ = $10, log_2(10000) = 13.3$
 5*1.33 = 6.65 s
 
 3
-(a) An unbalanced binary search tree may result in actual time close to O(log n)
-(b) Memory allocation problem
-(c) Branch prediction penalty
+(a) Different hardware performance
+(b) Different data types
+(c) The existence of concurrently running programs occupying system resources and causing performance degradation
