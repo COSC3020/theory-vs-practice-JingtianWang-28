@@ -16,7 +16,7 @@ Add your answers to this markdown file.
 
 /////
 1
-(a) The amount of input data may be different, for example, n=1000 and n=1,The running time of algorithm a is 1000n, and the running time of algorithm b is n. They both belong to O(n) time complexity, but in reality, algorithm a is slower than algorithm b.
+(a) The differences in the algorithms running on different devices will cause the actual execution time to be different, even significantly different.
 
 (b) The same asymptotic complexity may hide underlying performance differences, for example, the actual running time of O(n^2) may be different,The running time of algorithm a is 100n^n+10n+10, and the running time of algorithm b is n^2+n. They both belong to O(n^2) time complexity, but in reality, algorithm a is slower than algorithm b.
 
