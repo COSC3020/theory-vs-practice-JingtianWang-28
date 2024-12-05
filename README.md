@@ -16,9 +16,11 @@ Add your answers to this markdown file.
 
 /////
 1
-(a) The amount of input data may be different, for example, n=1000 and n=1
-(b) The same asymptotic complexity may hide underlying performance differences, for example, the actual running time of O(n^2) may be different
-(c) The specific implementation method and operational differences are not considered
+(a) The amount of input data may be different, for example, n=1000 and n=1,The running time of algorithm a is 1000n, and the running time of algorithm b is n. They both belong to O(n) time complexity, but in reality, algorithm a is slower than algorithm b.
+
+(b) The same asymptotic complexity may hide underlying performance differences, for example, the actual running time of O(n^2) may be different,The running time of algorithm a is 100n^n+10n+10, and the running time of algorithm b is n^2+n. They both belong to O(n^2) time complexity, but in reality, algorithm a is slower than algorithm b.
+
+(c) The specific implementation method and operational differences are not considered，the time complexity of traversing an array and a linked list is O(n), but the memory of an array is allocated continuously, while the memory of a linked list is distributed, so traversing an array is actually faster.
 
 2
 by the def of binary search tree time complexity:O(logn),and the time cost will grow logarithmically with number of element n
@@ -29,6 +31,8 @@ $log_2 (1000)$ = $10, log_2(10000) = 13.3$
 5*1.33 = 6.65 s
 
 3
-(a) Different hardware performance
-(b) Different data types
-(c) The existence of concurrently running programs occupying system resources and causing performance degradation
+(a) Different hardware performance, like 1000 elements run on 100tflops hardware, 10000 elements run on 1flops hardware
+
+(b) Different data types，like 1000 elements contain numbers, 10000 elements contain strings
+
+(c) The existence of concurrently running programs occupying system resources and causing performance degradation，When calculating 1000 elements, the system has no other background tasks. When calculating 10000 elements, the system has other high-load tasks in the background.
